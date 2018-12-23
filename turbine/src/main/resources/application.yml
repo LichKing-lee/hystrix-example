@@ -1,0 +1,15 @@
+server:
+  port: 9030
+
+spring:
+  application:
+    name: turbine
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:9020/eureka/
+
+turbine:
+  cluster-name-expression: new String('default')
+  app-config: consumer
